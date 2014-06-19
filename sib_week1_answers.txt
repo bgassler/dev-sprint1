@@ -1,3 +1,8 @@
-*** Cut and paste the for loop here ***
+Brendan Gassler
 
+*** Cut and paste the for loop here ***
+	{% for message in messages %}
+{{message}}
+{% endfor %}
 *** What is the for loop doing? ***
+	The for loop is iterating through each message, and then displaying the message. The loop terminates when the last message has been displays
