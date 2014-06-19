@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> TheNoButton </title>
+	</head>
+	<body> 
+		<br>
+		<left> Ask a Yes or No Question in Quotes: </left>
+		<br>
+		<form action="/" method="post">
+			<left>
+				<input type="text" name="expression" />
+				<input type="submit" value="Press Here" />
+			</center>
+		</form>
+		<left>
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<br>
+				Answer:
+				<pre>
+					{% for message in messages %}
+{{"No."}}
+					{% endfor %}
+				</pre>
+				{% endif %}
+			{% endwith %}
+		</left>
+	</body>
+</html>
